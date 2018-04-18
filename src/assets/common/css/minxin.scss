@@ -1,0 +1,24 @@
+@mixin box-sizing($sizing){
+  box-sizing:$sizing;
+  -o-box-sizing:$sizing;
+  -moz-box-sizing:$sizing;
+  -ms-box-sizing:$sizing;
+  -webkit-box-sizing:$sizing;
+}
+@mixin background($url){
+  background:url($url) no-repeat;
+  background-size:100% 100%
+}
+@mixin border-radius($radius){
+  border-radius:$radius;
+  -ms-border-radius:$radius;
+  -moz-border-radius:$radius;
+  -o-border-radius:$radius;
+  -webkit-border-radius:$radius;
+}
+@mixin border-color($color){
+  content:'';
+  display: inline-block;
+  border-left:2px solid $color;
+  position: absolute;
+}

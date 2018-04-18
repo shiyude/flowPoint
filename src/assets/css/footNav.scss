@@ -1,0 +1,38 @@
+@import '../common/css/minxin.scss';
+.footer{
+  height:1rem;
+  position: fixed;
+  bottom:0;
+  border-top:1px solid rgb(243,243,243);
+  background-color:rgb(247,247,247);
+  right:0;
+  left:0;
+  li{
+    width:50%;
+    font-size:.2rem;
+    height:100%;
+    color:#333333;
+    text-align: center;
+    @include box-sizing(border-box);
+    .icon{
+      display: inline-block;
+      height:.5rem;
+      width:.5rem;
+      margin-top:.1rem;
+    }
+    &.active{
+      .icon_sale{
+        @include background('../assets/images/icon-sale-active.png')
+      }
+      .icon_join{
+        @include background('../assets/images/icon-join-active.png')
+      }
+    }
+    .icon_sale{
+      @include background('../assets/images/icon-sale.png')
+    }
+    .icon_join{
+      @include background('../assets/images/icon-join.png')
+    }
+  }
+}

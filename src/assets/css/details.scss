@@ -1,0 +1,39 @@
+@import "../common/css/minxin";
+.details_section{
+  padding-bottom: 1rem;
+  .head{
+    text-align: center;
+    p{
+      display: inline-block;
+      margin: 0.3rem auto;
+      padding: 0.05rem 0.15rem;
+      background-color: #1684c1;
+      color: white;
+      font-size: 0.3rem;
+      @include border-radius(.1rem)
+    }
+  }
+  .text_content{
+    width: 100%;
+    padding: 0 0.3rem 0.5rem;
+    height: auto;
+    font-size: 0.28rem;
+    line-height: 1.8;
+    @include box-sizing(border-box);
+  }
+  .go_back{
+    display: block;
+    width: 3.61rem;
+    height: 0.86rem;
+    margin: 0.4rem auto;
+    color: white;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.86rem;
+    background-color: #46abe8;
+    -moz-box-shadow: 0 0.06rem 0.05rem #ccc;
+    -webkit-box-shadow: 0 0.06rem 0.05rem #ccc;
+    box-shadow: 0 0.06rem 0.05rem #ccc;
+    @include border-radius(.1rem);
+  }
+}

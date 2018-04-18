@@ -1,0 +1,192 @@
+@import "../common/css/minxin";
+.sales_section{
+  padding-bottom:1rem;
+  .header{
+    position: relative;
+    height: 1rem;
+    padding-left: 0.3rem;
+    line-height: 1rem;
+    font-size: 0.28rem;
+    color: #373636;
+    .icon_do_list{
+      display: inline-block;
+      width: .4rem;
+      height: .4rem;
+      margin-left: .1rem;
+      vertical-align: middle;
+      position: relative;
+      top: -0.03rem;
+    }
+  }
+  .item{
+    position: relative;
+    width: 3rem;
+    height: 1.5rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.4rem;
+    &:nth-child(even){
+      margin-left: 0.9rem;
+    }
+    span{
+      position: absolute;
+    }
+    .price{
+      font-size: 0.36rem;
+      color: #F7B007;
+      top: 0.1rem;
+      left: 0.1rem;
+      .money_icon{
+        font-size:.26rem;
+        text-decoration: none;
+      }
+      .flow_desc{
+        font-size: 0.24rem;
+        padding-left: 0.05rem;
+        text-decoration: none;
+      }
+      .p_origin{
+        padding-left: 0.1rem;
+        font-size: 0.24rem;
+        text-decoration: line-through;
+        color: #666869;
+      }
+    }
+    .date{
+      top: 0.62rem;
+      left: 0.10rem;
+      font-size: 0.24rem;
+    }
+    .tip{
+      bottom: 0.15rem;
+      left: 0.10rem;
+      font-size: 0.2rem;
+      color: #666869;
+    }
+    .type{
+      top: 0.95rem;
+      right: -0.36rem;
+      width: 1.5rem;
+      font-family: 'PingFang SC','microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      font-size: 0.26rem;
+      color: #ffffff;
+      text-align: center;
+    }
+    .icon_hot{
+      display: block;
+      width: 0.4rem;
+      height: 0.4rem;
+      right: 0;
+      @include background('../assets/images/icon-hot.png');
+      top: -0.15rem;
+      z-index: 101;
+    }
+  }
+  .time_limited_flow{
+    .header{
+      &:before{
+        @include border-color(rgb(24,129,184));
+        width: 0.05rem;
+        height: 0.15rem;
+        left: 0.18rem;
+        top: 50%;
+        margin-top:-0.075rem;
+      }
+      .icon_do_list{
+        &.time_hide{
+          @include background('../assets/images/yjll-hide.png');
+        }
+        &.time_show{
+          @include background('../assets/images/yjll-show.png');
+        }
+      }
+
+    }
+    .content{
+      background-color:rgb(226,241,255);
+      .item{
+        @include background('../assets/images/time-flow.png');
+        .date{
+          color: #1881b8;
+        }
+      }
+    }
+  }
+  .year_flow{
+       .header{
+         &:before{
+           @include border-color(rgb(139,139,193));
+           width: 0.05rem;
+           height: 0.15rem;
+           left: 0.18rem;
+           top: 50%;
+           margin-top:-0.075rem;
+         }
+         .icon_do_list{
+           &.year_hide{
+             @include background('../assets/images/nbll-hide.png');
+           }
+           &.year_show{
+             @include background('../assets/images/nbll-show.png');
+           }
+         }
+       }
+       .content{
+         background-color:rgb(240,244,255);
+         .item{
+           @include background('../assets/images/year-flow.png');
+           .date{
+             color: #8095ba;
+           }
+         }
+       }
+   }
+  .tv_flow{
+    .header{
+      &:before{
+        @include border-color(pink);
+        width: 0.05rem;
+        height: 0.15rem;
+        left: 0.18rem;
+        top: 50%;
+        margin-top:-0.075rem;
+      }
+      .spll-right{
+        @include background('../assets/images/spll-right.png');
+      }
+    }
+    .content{
+      background-color:rgb(240,244,255);
+      .item{
+        @include background('../assets/images/year-flow.png');
+        .date{
+          color:pink;
+        }
+      }
+    }
+  }
+  .month_flow{
+    .header{
+      &:before{
+        @include border-color(rgb(32,170,165));
+        width: 0.05rem;
+        height: 0.15rem;
+        left: 0.18rem;
+        top: 50%;
+        margin-top:-0.075rem;
+      }
+    }
+    .content{
+      background-color:rgb(238,251,246);
+      .item{
+        @include background('../assets/images/month-flow.png');
+        .date{
+          color:rgb(32,170,164);
+        }
+      }
+    }
+  }
+}
